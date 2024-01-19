@@ -26,7 +26,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPlainTextEdit" name="timeLabel">
+   <widget class="QLabel" name="timeLabel">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -35,8 +35,21 @@
       <height>70</height>
      </rect>
     </property>
-    <property name="readOnly">
+    <property name="font">
+     <font>
+      <family>Monospace</family>
+      <pointsize>32</pointsize>
+      <italic>true</italic>
+     </font>
+    </property>
+    <property name="autoFillBackground">
      <bool>true</bool>
+    </property>
+    <property name="text">
+     <string>12:34.567</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
   </widget>
