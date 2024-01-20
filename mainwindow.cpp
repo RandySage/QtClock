@@ -9,7 +9,7 @@ MainWindow::MainWindow(QWidget *parent)
     // Setup the timer
     timer = new QTimer(this);
     connect(timer, &QTimer::timeout, this, &MainWindow::updateTime);
-    timer->start(100); // Update every 100 ms
+    timer->start(4); // Update every 4 ms, which is ~half the period for 120Hz
 
     updateTime(); // Initial time update
 }
